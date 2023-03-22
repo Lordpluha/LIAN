@@ -1,0 +1,49 @@
+// Navigation
+
+#nav {
+	position: relative;
+	display: block;
+	background-color: #f0f0f1;
+	@include user-select-none;
+}
+
+.title_block_img {
+	position: relative;
+	display: block;
+	background-image: url("../documents/img/img1.png");
+	height: 350px;
+	width: 100%;
+	.title {
+		position: relative;
+		display: block;
+
+		text-transform: uppercase;
+		float: left;
+
+		margin-top: 95px;
+		margin-left: 230px;
+
+		font-family: 'Roboto', sans-serif;
+		width: 840px;
+
+		h1 {
+			font-size: 49.5px;
+			font-weight: 400;
+			color: grey;
+			letter-spacing: 2px;
+		}
+		h3 {
+			margin-top: 55px;
+			font-size: 15px;
+			font-weight: 500;
+			letter-spacing: 8px;
+			color: black;
+		}
+		p {
+			margin-top: 14px;
+			text-transform: initial;
+			color: grey;
+			font-size: 15px;
+		}
+	}
+}

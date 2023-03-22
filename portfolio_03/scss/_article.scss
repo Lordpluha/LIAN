@@ -1,0 +1,149 @@
+// Article
+#article {
+	position: relative;
+	background-color: #fafafa;
+	margin: 0;
+	padding-top: 33px;
+	padding-bottom: 72px;
+
+}
+
+.header {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	width: 1140px;
+	height: 61px;
+
+	text-align: center;
+	padding-top: 20px;
+
+	a {
+		display: inline-block;
+
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #767676;
+		font-family: 'Roboto', sans-serif;
+		font-size: 13px;
+		font-weight: 900;
+		transition: margin 0.5s ease-in-out .05s;
+
+		&:hover {
+			color: black;
+			margin: 0 +6px;
+		}
+	}
+
+	hr {
+		display: inline-block;
+		position: relative;
+		transform: rotate(110deg);
+		width: 35px;
+
+		border: 0.5px solid #d8d8d8;
+		margin: 0 18px 5px 18px;
+	}
+}
+.shop_list {
+	position: relative;
+	display: block;
+	width: 1230px;
+	height: 1300px;
+	margin: 0 auto;
+	left: 25px;
+	div {
+		display: inline-block;
+		vertical-align: top;
+		margin: 5px;
+		.background_side_hover {
+			display: table;
+			background-color: grey;
+
+			.img_s_l {
+				position: relative;
+				display: block;
+				z-index: 13;
+				transition: opacity .2s ease-in-out .1s;
+			}
+	
+			.plus {
+				position: absolute;
+				visibility: hidden;
+				z-index: 14;
+				top: 45%;
+				left: 45%;
+				transition: visibility .15s ease-in-out .1s;
+			}
+		}
+	}
+	.item_1, .item_2, .item_3 {
+		margin-top: 20px;
+	}
+	.item_2 {
+		.img_s_l {
+			width: 390px;
+			height: 280px;
+		}
+	}
+	.item_4 {
+		top: -95px;
+	}
+	.item_5 {
+		top: -165px;
+	}
+	.item_7 {
+		top: -220px;
+	}
+	.item_8 {
+		top: -160px;
+		.img_s_l {
+			width: 390px;
+			height: 280px;
+		}
+	}
+	.item_9 {
+		top: -125px;
+	}
+	.item_10 {
+		left: 31%;
+		top: -325px;
+		.img_s_l {
+			width: 390px;
+			height: 380px;
+		}
+	}
+}
+
+.load_more_button {
+	position: relative;
+	display: block;
+	margin: 157px auto 0;
+
+	.button {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: 150px;
+		height: 30px;
+
+		padding-top: 7px;
+		padding-bottom: 10px;
+		padding-left: 24px;
+		padding-right: 24px;
+		
+		background-color: #949494;
+		border-radius: 3px;
+
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

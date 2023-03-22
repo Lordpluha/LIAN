@@ -1,0 +1,432 @@
+#article {
+	position: relative;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	background-color: #fafafa;
+	padding: 72px 230px;
+	@include user-select-none;
+}
+
+.them {
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	background-color: white;
+}
+.v1 {
+	width: 360px;
+	height: 400px;
+	padding: 40px;
+	.p1 {
+		background-color: black;
+		color: white;
+		width: 110px;	
+		height: 26px;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px 4px;
+		border-radius: 2px;
+		h4 {
+			font-weight: 500;
+			font-size: 13px;
+			
+		}
+	}
+	h2 {
+		margin-top: 25px;
+		color: #363636;
+	}
+	.text {
+		margin-top: 30px;
+		color: #767676;
+	}
+}
+.sub_info {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	margin-top: 48px;
+	p {
+		color: #999999;
+	}
+	.like_share {
+	}
+}
+.creator {
+	margin-top: 15px;
+	position: relative;
+	display: inline-block;
+	color: #cbcbcb;
+	width: 300px;
+	img {
+		position: relative;
+		display: inline-block;
+		height: 12px;
+		width: 10px;
+		margin-right: 6px;
+		float: left;
+		top: 4px;	
+	}
+}
+.v2 {
+	width: 360px;
+	height: 550px;
+	margin-left: 30px;
+	img {
+		position: relative;
+		display: block;
+	}
+	.block_text {
+		padding-left: 40px;
+		h2 {
+			margin-top: 25px;
+			color: #363636;
+		}
+		.text {
+			margin-top: 30px;
+			color: #767676;
+		}
+	}
+}
+
+// Красивый поиск
+.search_block {
+	margin-left: 30px;
+	width: 300px;
+	height: 60px;
+	position: relative;
+	display: inline-block;
+	background-color: white;
+	padding-top: 6px;
+	
+	input {
+		vertical-align: top;
+		margin-left: 25px;
+		padding-top: 17px;
+		position: relative;
+		display: inline-block;
+		width: 212px;
+		font-size: 16.5px;
+		color: grey;
+	}
+	button {
+		border-radius: 2px;
+		position: relative;
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		background-color: #999999;
+		margin-top: 5px;
+		img {
+			height: 25px;
+			width: 27px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}	
+}
+
+.v3 {
+	vertical-align: top;
+	margin-top: -115px;
+	width: 360px;
+	height: 550px;
+	img {
+		position: relative;
+		display: block;
+	}
+	.block_text {
+		padding-left: 40px;
+		h2 {
+			margin-top: 25px;
+			color: #363636;
+		}
+		.text {
+			margin-top: 30px;
+			color: #767676;
+		}
+	}
+}
+.video_obj {
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	background-color: white;
+	margin-left: 30px;
+	margin-top: 30px;
+	.main {
+		position: relative;
+	}
+	.holder {
+		position: absolute;
+		display: block;
+		top: 38%;
+		left: 42%;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.play {
+		position: absolute;
+		display: block;
+		top: 47%;
+		left: 48.5%;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.pause {
+		position: absolute;
+		display: none;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.dark_block {
+	margin-top: 30px;
+	width: 360px;
+	height: 330px;
+	background-image: url("../documents/img/article/posts/Coffe && Tea.png");
+	transition: background-color 1s ease-in-out .01s;
+	&:hover {
+		background-blend-mode: darken;
+		background-color: rgba(0,0,0,.7);
+		.block_text {
+
+			h2, .text {
+				color: white;
+			}
+			
+		}
+	}
+	
+	.hover_lab {
+		width: 110px;
+		height: 26px;
+		display: block;
+		position: relative;
+		background-color: black;
+		margin-top: 20px;
+		margin-left: 45px;
+		padding-top: 5px;
+		h3 {
+			position: relative;
+			display: block;
+			text-transform: uppercase;
+			text-align: center;
+			color: white;
+			font-size: 13px
+		}
+	}
+	.block_text {
+		padding-left: 40px;
+		h2 {
+			margin-top: 25px;
+			color: #363636;
+			transition: color 1s ease-in-out .01s;
+		}
+		.text {
+			margin-right: 30px;
+			margin-top: 20px;
+			color: #767676;
+			transition: color 1s ease-in-out .01s;
+		}
+		.sub_info {
+			margin-top: 20px;
+		}
+	}
+}
+
+.matches {
+	margin-left: 30px;
+	margin-top: -125px;
+	width: 360px;
+	height: 550px;
+	img {
+		position: relative;
+		display: block;
+	}
+	.block_text {
+		padding-left: 40px;
+		h2 {
+			margin-top: 25px;
+			color: #363636;
+		}
+		.text {
+			margin-top: 30px;
+			color: #767676;
+		}
+	}
+}
+.load_more {
+	position: relative;
+	display: block;		
+	margin: 80px auto 0px;
+	background-color: #959595;
+	width: 125px;	
+	height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 6px;
+	border-radius: 2px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+#aside {
+	position: relative;
+	display: block;
+	height: 1000px;
+	width: 300px;
+	float: right;
+	vertical-align: top;
+	top: -460px;
+	left: -55px;
+	
+	section {
+		position: relative;
+		display: block;
+		background-color: white;
+		margin-top: 20px;
+
+		.title {
+			position: relative;
+			display: block;
+			height: 40px;
+			width: 100%;
+			background-color: #ebebeb;
+			h1 {
+				position: relative;
+				display: block;
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: 400;
+				padding-top: 10px;
+				color: black;
+				letter-spacing: 3px;
+			}
+			.triagle {
+				position: absolute;
+				display: block;
+				margin: 10px auto 0px 45%;
+	
+				border: 13px solid transparent;
+				border-top: 10px solid #ebebeb;
+			}
+		}
+	}
+
+	#Posts {
+		.posts {
+			position: relative;
+			display: block;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			height: 100%;
+
+			@for $i from 1 through 4 {
+				.block_#{$i} {
+					margin-bottom: 20px;
+					
+					img {
+						position: relative;
+						display: block;
+						float: left;
+						vertical-align: top;
+					}
+
+					.text {
+						position: relative;
+						display: block;
+						vertical-align: top;
+						left: 13px;
+
+						h3 {
+							position: relative;
+							display: block;
+							font-size: 16px;
+							color: #3d3d3d;
+						}
+
+						p {
+							position: relative;
+							display: block;
+							margin-top: 8px;
+							color: #999999;	
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#Tags_pop {
+		position: relative;
+		display: block;
+		
+		.tags {
+			position: relative;
+			display: block;
+			padding: 19px;
+			width: 100%;
+			height: 150px;
+
+			div {
+				position: relative;
+				display: inline-block;
+
+				float: left;
+				vertical-align: top;
+
+				margin: 2.5px;
+
+				background-color: white;
+				border: 1px solid #eeeeee;
+				border-radius: 2px;
+				padding: 7px 10px;
+				&:hover {
+					background-color: black;
+					border: 1px solid black;
+					p {
+						color: white;
+					}
+				}
+				p {
+					font-size: 11px;
+					color: #b5b5b5;
+				}
+			}
+		}
+	}
+
+	#instagram {
+		position: relative;
+		display: block;
+
+		.content {
+			position: relative;
+			display: block;
+			padding: 20px;
+			padding-top: 30px;
+			height: 250px;
+
+			img {
+				position: relative;
+				display: inline-block;
+				float: left;
+				vertical-align: top;
+				height: 66px;
+				width: 82px;
+				margin: 2px;
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,240 @@
+// Article
+
+#info_company {
+	position: relative;
+	width: 100%;
+	height: 1660px;
+	padding: 72px 210px 76px 210px;
+	background-color: #fafafa;
+	@include user-select-none;
+}
+
+// Company
+.company {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 628px;
+	padding-bottom: 26px;
+}
+.left {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.slider {
+	position: relative;
+	width: 531px;
+	height: 600px;
+	overflow: hidden;
+	.view_slider {
+		display: table;
+    	position: relative;
+    	width: 531px;
+    	overflow: hidden;
+    	@include user-select-none;
+
+		.slides_tape {
+			position: relative;
+		    height: calc(100% * 2);
+		    top: 0;
+		    left: 0;
+		    margin: 0;
+		    padding: 0;
+		    -webkit-transition: 1s;
+		    -o-transition: 1s;
+		    transition: 1s;
+		    -webkit-transition-timing-function: ease-in-out;
+		    -o-transition-timing-function: ease-in-out;
+		    transition-timing-function: ease-in-out;
+
+			&, li {
+				margin: 0;
+	   			padding: 0;
+			}
+
+			li {
+				height: calc(100%/2);
+			    list-style: none;
+			    display: block;
+			    
+			    img {
+			    	height: 100%;
+			    	position: relative;
+			    }
+			}
+		}
+	}
+}
+
+.right {
+	position: relative;
+	display: block;
+	float: left;
+	margin-left: 53px;
+}
+
+.story {
+	position: relative;
+	margin-right: 53px;
+}
+
+.skills {
+	margin-top: 45px;
+	font-family: 'Roboto', sans-serif;
+	h2 {
+		position: relative;
+		display: block;
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: 8px;
+		color: black;
+		font-size: 18px;
+	}
+
+	.skill_bars {
+		position: relative;
+		display: block;
+		margin-top: 19px;
+
+		> div {
+			position: relative;
+			display: block;
+			margin-top: 24px;
+			p {
+				position: relative;
+				display: block;
+				color: #333433;
+				font-weight: 700;
+			}
+			.prog_proc {
+				position: absolute;
+				display: block;
+				top: -10px;
+				.proc {
+					position: relative;
+					display: block;
+					z-index: 3;
+					padding: 6px 9px;
+					background-color: black;
+					color: white;
+				}
+				.triagle {
+					position: absolute;
+					display: block;
+					z-index: 2;
+					content: "";
+					border: 10px solid transparent;
+					transform: rotate(90deg);
+					border-top: 0px solid black;
+					border-bottom: 15px solid black;
+					left: -3px;
+					top: 23px;
+				}
+			}
+			.bar {
+				margin-top: 19px;
+				position: relative;
+				display: block;
+				background-color: #ebebeb;
+				height: 10px;
+				width: 552px;
+				padding-left: 2px;
+				padding-top: 4px; 
+				.progress {
+					position: relative;
+					display: block;
+					background-color: grey;
+					height: 2px;
+					max-width: 546px;
+				}
+				.dot {
+					position: absolute;
+					display: block;
+					border-radius: 50%;
+					height: 12px;
+					width: 12px;
+					background-color: black;
+					top: -1px;
+
+					.dot_w {
+						margin: 4px;
+						height: 4px;
+						width: 4px;
+						border-radius: 50%;
+						background-color: white;
+					}
+				}
+				.w1 {
+					left: 487px;
+				}
+				.w2 {
+					left: 508px;
+				}
+				.w3 {
+					left: 272px;
+				}
+				.w4 {
+					left: 446px;
+				}
+			}
+		}
+	}
+}
+
+// Team
+.team {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 842px;
+	.title {
+		position: relative;
+		display: block;
+		width: 595px;
+		height: 138px;
+		margin: 74px auto 0;
+	}
+	.teachers {
+		position: relative;
+		display: flex;
+		width: 100%;
+		margin: 70px auto 0;
+
+		justify-content: space-between;
+		> div {
+			position: relative;
+			display: block;
+			height: 630px;
+			width: 360px;
+			margin: 0 15px 0 15px;
+			background-color: white;
+			.img {
+
+			}
+			.charact {
+				font-family: 'Roboto', sans-serif;
+				padding: 18px 40px;
+				h1 {
+					color: black;
+					font-size: 28px;
+					font-weight: 300;
+				}
+				h3 {
+					color: #777777;
+					font-size: 16px;
+					font-weight: 700;
+					margin-top: 8px;
+
+				}
+				p {
+					margin-top: 20px;
+					color: #777777;
+					font-size: 16px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}

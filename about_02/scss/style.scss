@@ -1,0 +1,53 @@
+// Creator: Teslyk Vladislav
+// Email: Teslaukevlad@gmal.com
+// Date of start: 30.10.2019
+// Date of end: ...(Coming soon)
+
+// Include files
+// Tools
+@import "_variables.scss";
+@import "_mixins.scss";
+
+// Code files
+@import "_header.scss";
+@import "_nav.scss";
+@import "_article.scss";
+@import "_footer.scss";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+// font-family: 'Roboto', sans-serif;
+//...
+
+//___________
+*,
+*:before,
+*:after {
+	position: relative;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+	z-index: 0;
+	outline: none;
+	float: none;
+	&::not(h1, h2, h3, h4, h5, h6, p, a, text) {
+		-webkit-user-select: none;
+    	-moz-user-select: none;
+    	-ms-user-select: none;
+    	-o-user-select: none;
+    	user-select: none;
+	}
+	
+}
+
+html {
+	position: absolute;
+	width: 1600px;
+	height: 2420px;
+	overflow-x: hidden;
+}
+
+body {
+
+}

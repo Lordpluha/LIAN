@@ -1,0 +1,79 @@
+// Header
+#header {
+	position: relative;
+	z-index: 20;
+	vertical-align: top;
+	width: 1600px;
+	height: 90px;
+	box-shadow: 0 -3px 5px grey;
+	background-color: #ffffff;
+
+	@include user-select-none;
+}
+
+.logo {
+	display: inline-block;
+	position: relative;
+	margin-left: 230px;
+	padding-top: 27px;
+	padding-bottom: 28px;
+	margin-right: 427px;
+	float: left;
+	.logotype {
+		vertical-align: middle;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.main_buts_head {
+	position: relative;
+	width: 588px;
+	display: inline-block;
+	/*Заменить*/
+	.hightlight {
+		display: inline-block;
+		position: relative;
+		border: 1px black solid;
+		width: 20px;
+		margin-top: 46px;
+		margin-right: 19px;
+		
+	}
+
+	.search_bar {
+		display: inline-block;
+		position: relative;
+		vertical-align: top;
+		margin-left: 46px;
+		padding-top: 39px;
+		.search {
+			height: 13px;
+			width: 13px;
+			overflow: hidden;
+			background: rgba(0, 0, 0, .0);
+		}
+	}
+
+	.but {
+		display: inline-block;
+		padding-top: 39px;
+		font-size: 14px;
+		vertical-align: top;
+		&:not(.contact) {
+			margin-right: 45px;
+		}
+
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #777777;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 900;
+		transition: color 0.7s ease-in-out 0s;
+		&:hover,
+		&:active {
+			color: #000000;
+		}
+	}
+}
