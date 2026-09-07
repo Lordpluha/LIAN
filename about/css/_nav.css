@@ -1,0 +1,36 @@
+#nav {
+  position: relative;
+  display: block;
+  background-color: #f0f0f1; }
+
+.title_block_img {
+  position: relative;
+  display: block;
+  background-image: url("../documents/img/title-img.png");
+  height: 350px;
+  width: 100%; }
+  .title_block_img .title {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 95px;
+    margin-left: 230px;
+    font-family: 'Roboto', sans-serif;
+    width: 911px; }
+    .title_block_img .title h1 {
+      font-size: 49.5px;
+      font-weight: 400;
+      color: grey;
+      letter-spacing: 2px; }
+    .title_block_img .title h3 {
+      margin-top: 55px;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 8px;
+      color: black; }
+    .title_block_img .title p {
+      margin-top: 14px;
+      text-transform: initial;
+      color: grey;
+      font-size: 15px; }
